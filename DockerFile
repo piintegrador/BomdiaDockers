@@ -1,0 +1,8 @@
+FROM python:3
+MAINTAINER -sistemas-
+ENV NOME JIMMY_RENAN
+COPY bomdia.py /var/home
+COPY executar.sh /var/home
+ENTRYPOINT ["-/usr/local/bin/python3-"]
+CMD ["-bomdia.py-"]
+EXPOSE 80 443
